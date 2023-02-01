@@ -361,6 +361,10 @@ footer h3, h4 {
     .menu-section.on {
         width: 60vw;
     }
+
+    .first-bg {
+        background-position: center right;
+    }
 }
 
 @media (max-width: 375px) {
