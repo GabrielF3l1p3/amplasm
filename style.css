@@ -155,6 +155,7 @@ nav button:hover::after {
     color: white;
     text-align: center;
     margin-bottom: 100px;
+    padding: 10px;
 }
 
 /* About - sobre nós */
@@ -262,18 +263,6 @@ footer h3, h4 {
     }
 }
 
-@media (max-width: 550px) {
-    .about p {
-        width: 100%;
-    }
-}
-
-@media (max-width: 640px) {
-    footer .container {
-        flex-direction: column;
-    }
-}
-
 @media (max-width: 730px) {
     nav {
         display: none;
@@ -358,9 +347,29 @@ footer h3, h4 {
     }
 }
 
+@media (max-width: 640px) {
+    footer .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .about p {
+        width: 100%;
+    }
+
+    .menu-section.on {
+        width: 60vw;
+    }
+}
+
 @media (max-width: 375px) {
     html {
         font-size: 62.5%;
+    }
+
+    .menu-section.on {
+        font-size: 4rem;
     }
 }
 
