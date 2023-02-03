@@ -1,0 +1,120 @@
+
+@media (max-width: 950px) {
+    .about {
+        width: 80%;
+    }
+}
+
+@media (max-width: 730px) {
+    nav {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        margin: 6px auto;
+        height: 5px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        background-color: black;
+        
+        width: 60vw;
+        height: 100vh;
+
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 30px;
+        top: 45px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav ul {
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on nav ul button {
+        transition: 0.5s;
+        font-size: 2rem;
+        line-height: 5.5rem;
+    }
+
+    .menu-section.on nav ul button::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        margin: auto;
+        display: block;
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 640px) {
+    footer .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .about p {
+        width: 100%;
+    }
+
+    .menu-section.on {
+        width: 60vw;
+    }
+
+    .first-bg {
+        background-position: center right;
+    }
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .menu-section.on {
+        font-size: 4rem;
+    }
+}

@@ -256,7 +256,7 @@ footer h3, h4 {
 }
 
 /* Responsividade */
-
+/* 
 @media (max-width: 950px) {
     .about {
         width: 80%;
@@ -375,5 +375,5 @@ footer h3, h4 {
     .menu-section.on {
         font-size: 4rem;
     }
-}
+} */
 
