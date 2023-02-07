@@ -31,7 +31,7 @@ h3 {
 p {
     font-family: 'Poppins', sans-serif;
     padding: 16px;
-    font-weight: lighter;
+    font-weight: 500;
     /* color: rgba(255, 255, 255, 0.556); */
 
 }
@@ -128,7 +128,7 @@ nav button:hover::after {
 
     background: linear-gradient( to right, rgba(0,0,0,1.0) 0%, rgba(0,0,0,0.4) 100% ), url(../image/usinagem-bg-desfoque.png) no-repeat center;
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     height: 35vh;
     text-align: center;
     display: flex;
@@ -159,52 +159,49 @@ nav button:hover::after {
 
 /* Second section */
 
-.products{
-    margin: auto;
+.services {
+    margin: 30px auto;
     width: 100%;
     max-width: 980px;
 }
 
-.products .all-products {
+.services .box-service {
+    width: 100%;
+    max-width: 930px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-.products .image img{
-    width: 150px;
-    height: 150px;
-}
-
-.products .box-product {
-    width: 200px;
-    height: 315px;
-    /* background-color: lightgreen; */
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
+    gap: 10px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
     padding: 10px;
-    font-size: 0.9rem;
-    /* font-weight: bolder; */
-    border: 2px solid rgba(128, 128, 128, 0.698);
-    margin: 10px 0px;
+    margin: 20px 0px;
 }
 
-.product-text {
-    height: 130px;
-    min-height: 130px;
-    overflow: hidden;
+.image-service img {
+    width: 400px;
 }
 
-.product-text p {
-    padding: 8px;
+.image-service figure > figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
 }
 
+.text-service {
+    padding: 16px;
+    width: 500px;
+    /* border: 1px solid red; */
+}
 
-.box-product button {
+.text-service h3 {
+    font-size: 1.5rem;
+}
+
+.text-service p {
+    font-size: 1rem;
+    padding: 16px 0px;
+}
+
+.text-service button {
     background-color: black;
     color: white;
     padding: 10px 20px;
@@ -213,7 +210,7 @@ nav button:hover::after {
     transition: 0.5s;
 }
 
-.box-product button:hover {
+.text-service button:hover {
     background-color: white;
     color: black;
     text-decoration: underline;
@@ -242,7 +239,6 @@ footer h2{
 }
 
 
-/* Container no footer */
 
 footer .container {
     display: flex;
@@ -295,8 +291,26 @@ footer h3, h4 {
     font-weight: 800;
 }
 
+@media (max-width: 1000px) {
+    .services .box-service {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 520px) {
+    .image-service img {
+        width: 300px;
+    }
+
+    .text-service {
+        width: 100%;
+    }
+
+
+}
+ 
 @media (max-width: 375px) {
     html {
-        font-size: 16px !important;
+        font-size: 12px !important;
     }
 }
