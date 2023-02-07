@@ -32,10 +32,7 @@ p {
     font-family: 'Poppins', sans-serif;
     padding: 16px;
     font-weight: lighter;
-    /* color: rgba(255, 255, 255, 0.556); */
-
 }
-
 
 header {
     background-color: black;
@@ -136,7 +133,6 @@ nav button:hover::after {
     align-items: center;
     flex-direction: column;
     color: rgba(255, 255, 255, 0.556);
-    /* background-attachment: fixed; */
 }
 
 
@@ -181,14 +177,11 @@ nav button:hover::after {
 .products .box-product {
     width: 200px;
     height: 315px;
-    /* background-color: lightgreen; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     padding: 10px;
     font-size: 0.9rem;
-    /* font-weight: bolder; */
     border: 2px solid rgba(128, 128, 128, 0.698);
     margin: 10px 0px;
 }

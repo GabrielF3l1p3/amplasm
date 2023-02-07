@@ -9,7 +9,6 @@ function menuON() {
     document.body.style.overflow = show ? "hidden" : "initial"
     menuSection.classList.toggle('on', show);
     show = !show
-    // console.log(show)
 }
 
 // ================== parte 2 =============================
